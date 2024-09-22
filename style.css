@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(./images/rainforest.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+
+}
+.card{
+    width: 100%;
+    max-width: 470px;
+    margin: 100px auto 0; 
+    /* background: linear-gradient(135deg,#00feba,#5b548a); */
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px 35px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: none;
+    height: 60px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    outline: none;
+    background: #ebfffc;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.search button {
+    border: none;
+    outline:none;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;   
+}
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+
+    width: 160px;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+    margin-top: 10px;
+}
+.column{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.column img{
+    width: 50px;
+    margin-right: 10px;
+}
+.humidity , .wind-speed{
+    font-size: 28px;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
+.hide{
+    display: none;
+}
+
